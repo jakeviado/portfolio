@@ -155,7 +155,6 @@ a:hover{ /*mga links ito bai*/
 footer {
     display: flex;
     justify-content: center;
-    padding: 5px;
 }
 footer p{
     font-family: Josefin Sans;
@@ -163,6 +162,7 @@ footer p{
 }
 .social-links a{
     display: inline;
+    font-size: 25px;
     justify-content: center;
     padding: 5px;
     color: #ffffff;
