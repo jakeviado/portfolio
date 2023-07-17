@@ -22,7 +22,7 @@ body{
     font-size: 27px;
 }
 button{
-    padding: 15px;
+    padding: 13px;
     font-family: Josefin Sans;
     font-weight: 500;
     color: #15152a;
@@ -37,7 +37,7 @@ button:hover{
     color:#ffffff;
 }
 .dropdown button{
-    font-size: 18px;
+    font-size: 14px;
 }
 
 /*Contents*/
@@ -56,15 +56,6 @@ h1{
     color: #5f7d99;
     font-family: Josefin Sans;
     font-size: 40px;
-}
-h3{
-    justify-content: center;
-    cursor: default;
-    color: #5f7d99;
-    font-size: 30px;
-    font-weight: 500;
-    font-family: Josefin Sans;
-    padding: 20px;
 }
 section p{
     cursor: default;
@@ -160,17 +151,24 @@ a:hover{ /*mga links ito bai*/
 /*Footer*/
 .footer{
     display: flex;
-    position: relative;
-    bottom: 0;
-    color: white;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    
+    padding: 40px 13vw;
+    margin: 0 auto;
+    bottom: 0;
 }
-.social-links a{
-    font-size: 30px;
-    justify-content: center;
+.container a{
+    padding: 10px;
+    position: relative;
+    font-size: 23px;
     font-weight: 500;
     font-family: Josefin Sans;
-    padding: 10px 7vw;
+}
+.social-links{
+    
+    color: #ffffff;
+    flex-direction: column;
+    display: flex;
+    min-height: 5rem;
+    justify-content: center;
 }
