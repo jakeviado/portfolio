@@ -5,6 +5,7 @@ body{
     padding: 0px;
     background: #15152a;
 }
+
 .nav-bar{
     display: flex;
     justify-content: space-between;
@@ -87,7 +88,7 @@ section p{
     font-size: 17px;
     color: #E7F6F2;
 }
-.inbtn{
+.btn{
     display: block;
     width: 300px;
     border-radius: 1px;
@@ -112,6 +113,7 @@ a:hover{ /*mga links ito bai*/
 .layer1{
     background-image: url('/SVG/layered-waves-haikei.svg');
 }
+/*
 .blobs{
     image-rendering: optimizeQuality;
     position: absolute;
@@ -135,6 +137,7 @@ a:hover{ /*mga links ito bai*/
 .layer3{
     background-image: url('/SVG/blob-haikei-white.svg');
 }
+*/
 /*scrollbar*/
 ::-webkit-scrollbar {
     width: 5px;
