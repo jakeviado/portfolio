@@ -153,17 +153,19 @@ a:hover{ /*mga links ito bai*/
 
 /*Footer*/
 footer {
+    justify-content: space-between;
     display: flex;
-    justify-content: center;
+    position: relative;
 }
 footer p{
     font-family: Josefin Sans;
     color: #ffffff;
 }
 .social-links a{
+    position: relative;
+    text-align: center;
     display: inline;
     font-size: 25px;
-    justify-content: center;
     padding: 5px;
     color: #ffffff;
 }
