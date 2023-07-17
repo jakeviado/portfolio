@@ -115,7 +115,7 @@ a:hover{ /*mga links ito bai*/
 .blobs{
     image-rendering: optimizeQuality;
     position: absolute;
-    min-height: 900px;
+    min-height: 1000px;
     min-width: 100px;
     right: 0px;
     background-repeat: no-repeat;
