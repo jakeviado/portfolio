@@ -152,25 +152,10 @@ a:hover{ /*mga links ito bai*/
 }
 
 /*Footer*/
-.footer{
+footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 13vw;
-    margin: 0 auto;
-    bottom: 0;
-}
-.container a{
-    padding: 10px;
-    position: relative;
-    font-size: 15px;
-    font-weight: 500;
-    font-family: Josefin Sans;
-}
-.social-links{
-    color: #ffffff;
-    flex-direction: row;
-    display: flex;
-    min-height: 1rem;
     justify-content: center;
+    padding: 5px;
+    font-family: Josefin Sans;
+    color: #ffffff;
 }
