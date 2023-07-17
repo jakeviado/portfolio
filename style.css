@@ -13,7 +13,7 @@ body{
     margin: 0 auto;
 }
 .logo{
-    cursor: pointer;
+    cursor: default;
     text-align: center;
 }
 .logo-name{
@@ -22,9 +22,8 @@ body{
     font-size: 27px;
 }
 button{
-    padding: 10px;
+    padding: 15px;
     font-family: Josefin Sans;
-    font-size: 13px;
     font-weight: 500;
     color: #15152a;
     background-color: #ffffff;
@@ -36,6 +35,9 @@ button{
 button:hover{
     background-color: #5f7d99;
     color:#ffffff;
+}
+.dropdown button{
+    font-size: 18px;
 }
 
 /*Contents*/
@@ -49,22 +51,29 @@ section{
     padding: 40px 13vw;
 }
 h1{
+    cursor: default;
     padding-top: 10%;
     color: #5f7d99;
     font-family: Josefin Sans;
     font-size: 40px;
 }
-p{
+h3{
+    justify-content: center;
+    cursor: default;
+    color: #5f7d99;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Josefin Sans;
+    padding: 20px;
+}
+section p{
+    cursor: default;
     font-size: 19px;
 }
 
 
 /*dropdown button*/
-.dropdown .button{
-    position: relative;
-}
-
-.dropdown-content {
+.dropdown-content{
     display: none;
     position: absolute;
     background: rgba(255, 255, 255, 0.1);
@@ -77,9 +86,9 @@ p{
     right: 10%;
     top: 10%;
 }
-a{
+.dropdown-content a{
     display: flex;
-    padding: 7%;
+    padding: 10%;
     margin: 17px;
     text-align: left;
     font-family: 'Josefin Sans', sans-serif;
@@ -90,7 +99,6 @@ a{
 .inbtn{
     display: block;
     width: 300px;
-    margin-top: 30px;
     border-radius: 1px;
     font-size: 17px;
     
@@ -147,4 +155,22 @@ a:hover{ /*mga links ito bai*/
 ::-webkit-scrollbar-thumb {
     background: #5f7d99;
     border-radius: 4px;
+}
+
+/*Footer*/
+.footer{
+    display: flex;
+    position: relative;
+    bottom: 0;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.social-links a{
+    font-size: 30px;
+    justify-content: center;
+    font-weight: 500;
+    font-family: Josefin Sans;
+    padding: 10px 7vw;
 }
