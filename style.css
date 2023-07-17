@@ -156,6 +156,14 @@ footer {
     display: flex;
     justify-content: center;
     padding: 5px;
+}
+footer p{
     font-family: Josefin Sans;
+    color: #ffffff;
+}
+.social-links a{
+    display: inline;
+    justify-content: center;
+    padding: 5px;
     color: #ffffff;
 }
