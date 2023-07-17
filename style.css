@@ -160,15 +160,14 @@ a:hover{ /*mga links ito bai*/
 .container a{
     padding: 10px;
     position: relative;
-    font-size: 23px;
+    font-size: 15px;
     font-weight: 500;
     font-family: Josefin Sans;
 }
 .social-links{
-    
     color: #ffffff;
-    flex-direction: column;
+    flex-direction: row;
     display: flex;
-    min-height: 5rem;
+    min-height: 1rem;
     justify-content: center;
 }
