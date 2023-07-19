@@ -15,12 +15,15 @@ body{
     margin: 0 auto;
 }
 
+
 .logo-name{
     text-align: center;
     color: #E7F6F2;
     font-family: Josefin Sans;
     font-size: 27px;
 }
+
+
 button{
     padding: 13px;
     font-family: Josefin Sans;
@@ -39,6 +42,7 @@ button:hover{
 .dropdown button{
     font-size: 14px;
 }
+
 
 /*Contents*/
 .section-contents{
@@ -86,7 +90,6 @@ button:hover{
 }
 
 
-
 /*CARDS*/
 .card-list {
     display: flex;
@@ -99,18 +102,19 @@ button:hover{
     width: 5px;
     height: 4px;
 }
+
 .card-list::-webkit-scrollbar-thumb {
     border-radius: 4px;
 }
-
 
 .card {
     height: 350px;
     width: 450px;
     min-width: 250px;
     padding: 1.5rem;
-    border-radius: 4px;
-    filter: contrast(100%) brightness(100%);
+    border-radius: 4px; 
+    filter: url(#noiseFilter);
+    filter: contrast(100%) brightness(100%); 
     background: linear-gradient(-45deg, #D3C4D1, #E9E3B4, #E5EAFA, #C6CCB2);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
@@ -177,7 +181,6 @@ button:hover{
 }
 
 .avatar img {
-    filter: contrast(100%) brightness(100%);
     width: 60px;
     height: 60px;
     display: block;
@@ -313,34 +316,6 @@ nav .footer-details{
     padding: 5px;
     color: #ffffff;
 }
-.social-links .links:hover{
-    background-image: linear-gradient(
-    -225deg,
-    #5f7d99 0%,
-    #769cbf 29%,
-    #748dc7 67%,
-    #8aa8ed 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 3s linear infinite;
-  display: inline-block;
-      font-size: 40px;
-      font-family: Josefin Sans;
-      cursor: pointer;
-}
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
-
 section .paragraph-contents{
     cursor: default;
     font-size: 19px;
