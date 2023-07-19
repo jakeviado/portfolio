@@ -13,6 +13,7 @@
 
 
 
+
 <body>
     
     <nav class="nav-bar">
@@ -143,7 +144,21 @@
         </nav>
     </div>
 
+
+    <svg>
+      <filter id="grainy">
+        <feTurbulence 
+      type='fractalNoise' 
+      baseFrequency='3.65' 
+      numOctaves='10' 
+      stitchTiles='stitch'/>
+      </filter>
+    </svg>
+
+
     <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/5e25187647.js" crossorigin="anonymous"></script>
+    
 </body>
+
 </html>

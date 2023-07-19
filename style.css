@@ -52,7 +52,7 @@ button:hover{
 }
 
 .big-header { /*mga header sa sections*/
-  background-image: linear-gradient(
+    background-image: linear-gradient(
     225deg,
     #DDE6ED 1%,  
     #E5EAFA 30%,
@@ -110,6 +110,7 @@ button:hover{
     min-width: 250px;
     padding: 1.5rem;
     border-radius: 4px;
+    filter: contrast(100%) brightness(100%);
     background: linear-gradient(-45deg, #D3C4D1, #E9E3B4, #E5EAFA, #C6CCB2);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
@@ -176,6 +177,7 @@ button:hover{
 }
 
 .avatar img {
+    filter: contrast(100%) brightness(100%);
     width: 60px;
     height: 60px;
     display: block;
