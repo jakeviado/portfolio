@@ -112,25 +112,21 @@ section-contents .paragraph-contents{
     min-width: 250px;
     padding: 1.5rem;
     border-radius: 4px;
-    background: #28242f;
-    box-shadow: -1px 8px 16px 0px rgba(0,0,0,0.2);
-    display: flex;
-    flex-direction: column;
-    transition: .1s;
-    margin: 0;
-    scroll-snap-align: start;
-    clear: both;
-    position: relative;
-    cursor: default;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
 
-.card:focus-within~.card, .card:hover~.card {
-    transform: translateX(13px);
-}
-
-.card:hover {
-    transform: translateY(-1rem);
-    background: linear-gradient(60deg,#172424,#365a67);
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .card:not(:first-child) {
@@ -143,9 +139,9 @@ section-contents .paragraph-contents{
 }
 
 .card-header p {
-    font-size: 14px;
+    font-size: 17px;
     margin: 0 0 1rem;
-    color: #7a7a8c;
+    color: #15152a;
 }
 
 .card-header h2 {
@@ -159,7 +155,7 @@ section-contents .paragraph-contents{
 }
 
 .card-header h2:hover {
-    background: linear-gradient(90deg,#748dc7,#8aa8ed);
+    background: linear-gradient(90deg,#15152a,#15152a);
     text-shadow: none;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -199,7 +195,7 @@ section-contents .paragraph-contents{
 .author-name-prefix {
     font-style: normal;
     font-weight: 700;
-    color: #7a7a8c;
+    color: #15152a;
 }
 
 .half-circle {
