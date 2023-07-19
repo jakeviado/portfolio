@@ -181,8 +181,8 @@ button:hover{
 }
 
 .avatar img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     display: block;
     overflow: hidden;
     margin: 16px 10px;
@@ -232,16 +232,14 @@ button:hover{
 */
 
 
-
-
-
 /*dropdown button*/
 .dropdown-content{
     display: none;
     position: absolute;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
-    width: 50%;
+    min-width: 250px;
+    padding: 20px;
     min-height: max-content;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -249,6 +247,8 @@ button:hover{
     border-radius: 4px;
     right: 0;
     top: 12%;
+    transition: .3s;right: 0;
+    color: #ffffff;
 }
 .dropdown-content .dropdown-btn{
     display: flex;
@@ -257,7 +257,7 @@ button:hover{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 500;
     font-size: 15px;
-    color: #E7F6F2;
+    color: #ffffff;
 }
 .btn{
     height: 50px;
@@ -320,3 +320,5 @@ section .paragraph-contents{
     cursor: default;
     font-size: 19px;
 }
+
+
