@@ -179,6 +179,12 @@ button:hover{
     position: relative;
     box-sizing: border-box;
 }
+.additional-avatar {
+    grid-area: auto;
+    align-self: center;
+    position: relative;
+    box-sizing: border-box;
+}
 
 .avatar img {
     width: 50px;
@@ -187,6 +193,15 @@ button:hover{
     overflow: hidden;
     margin: 16px 10px;
 }
+
+.additional-avatar img {
+    width: 40px;
+    height: 40px;
+    display: inline;
+    overflow: hidden;
+    margin: 1px 1px;
+}
+
 
 .author-name {
     grid-area: auto;
