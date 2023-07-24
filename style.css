@@ -150,7 +150,7 @@ button:hover{
 
 .card-header p {
     font-weight: 500;
-    font-size: 15px;
+    font-size: 17px;
     margin: 0 0 1rem;
     color: #ede6eb;
 }
@@ -197,11 +197,11 @@ button:hover{
 }
 
 .avatar img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     display: block;
     overflow: hidden;
-    margin: 16px 10px;
+    margin: 16px 0;
 }
 
 .additional-avatar img {
@@ -214,6 +214,7 @@ button:hover{
 
 
 .author-name {
+    margin: .5rem;
     grid-area: auto;
     box-sizing: border-box;
 }
@@ -234,13 +235,12 @@ button:hover{
 .tags a {
     font-style: normal;
     font-weight: 100;
-    font-size: 10px;
     color: #ede6eb;
     text-transform: uppercase;
     font-size: 10px;
     border: 1px solid #ede6eb;
-    border-radius: 2rem;
-    padding: .2rem .85rem .25rem;
+    border-radius: 3rem;
+    padding: .35rem 1rem .30rem;
     position: relative;
     
 }
