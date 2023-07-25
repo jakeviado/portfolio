@@ -143,9 +143,15 @@ button:hover{
 	animation: gradient 15s ease infinite;
 }
 .svg-element-binary{
-    position: relative;
     width: 500%;
     height: 100%;
+}
+.svg-element-header{
+    font-size: 20px;
+    font-family: 'EXOTYPE';
+    position: absolute;
+    padding: 1.5rem;
+    
 }
 
 @keyframes gradient {
