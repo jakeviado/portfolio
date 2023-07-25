@@ -22,7 +22,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10%;
+    padding: 10px 9%;
     margin: 0 auto;
 }
 
@@ -129,29 +129,27 @@ button:hover{
     min-width: 350px;
     padding: 1.5rem;
     border-radius: 4px; 
-    background: linear-gradient(-45deg, #ff6d1e, #ff6d1e, #ff0149, #ff025a);
+    background: linear-gradient(-45deg, #ff6d1e, #e67e15, #ff0149, #ef44b8);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 }
 
 .card-section1{
-    display: flex;
     overflow: hidden;
     margin-top: 15px;
-    height: 200px; 
-    background: linear-gradient(-45deg, #ff6d1e, #ff6d1e, #ff0149, #ff025a);
+    min-width: max-content;
+    height: 5px; 
+    background: radial-gradient( #e67e15, #ff6d1e, #ff0149, #ef44b8, #6f0bd8, #0790e9, #03cbbb);
+    background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
+    justify-content: space-evenly;
 }
-.svg-element-binary{
-    width: 500%;
-    height: 100%;
-}
+
 .svg-element-header{
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'EXOTYPE';
     position: absolute;
-    padding: 1.5rem;
-    
+    padding: 2rem;
 }
 
 @keyframes gradient {
