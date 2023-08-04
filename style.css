@@ -58,7 +58,7 @@ button:hover{
 /*Contents*/
 .section-contents{
     color: #E7F6F2;
-    font-family: 'Unbounded', cursive;
+    font-family: 'Unbounded';
     position: relative;
     flex-direction: column;
     align-items: center;
@@ -72,7 +72,7 @@ button:hover{
     225deg,
     #DDE6ED 1%,  
     #fefefe 30%,
-    #9fa1c6 60%,
+    #fefefe 60%,
     #DDE6ED 100%
   );
   background-size: auto auto;
@@ -89,7 +89,7 @@ button:hover{
       margin-bottom: 1%;
       font-size: 36px;
       cursor: default;
-      font-family: 'Unbounded', cursive;
+      font-family: 'Unbounded';
 }
 @keyframes textclip {
   to {
@@ -124,9 +124,8 @@ button:hover{
 }
 
 .card {
-    height: 350px;
-    width: 450px;
-    min-width: 350px;
+    height: 300px;
+    min-width: 330px;
     padding: 1.5rem;
     border-radius: 4px; 
     background: linear-gradient(-45deg, #ff6d1e, #e67e15, #ff0149, #ef44b8);
@@ -139,7 +138,7 @@ button:hover{
     margin-top: 15px;
     min-width: max-content;
     height: 5px; 
-    background: radial-gradient( #e67e15, #ff6d1e, #ff0149, #ef44b8, #6f0bd8, #0790e9, #03cbbb);
+    background: radial-gradient( #e67e15, #ff6d1e, #ff0149, #ef44b8, #6f0bd8, #cc9ced, #03cbbb);
     background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
     justify-content: space-evenly;
@@ -179,7 +178,7 @@ button:hover{
     font-size: 17px;
     margin: 0 0 1rem;
     color: #ede6eb;
-    font-family: 'Unbounded', cursive;
+    font-family: 'Unbounded';
 }
 
 .card-header h2 {
@@ -194,21 +193,13 @@ button:hover{
     cursor: pointer;
 }
 
-.card-header h2:hover {
-    background: linear-gradient(90deg,#ede6eb,#ede6eb);
-    text-shadow: none;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-}
-
 .card-author {
     margin: 4rem 0 0;
     display: grid;
     grid-template-columns: 75px 1fr;
     align-items: center;
     position: relative;
-    font-family: 'Unbounded', cursive;
+    font-family: 'Unbounded';
 }
 
 .avatar {
@@ -290,8 +281,8 @@ button:hover{
     display: none;
     position: absolute;
     background: rgba(255, 255, 255, 0.1);
+    min-width: none;
     backdrop-filter: blur(15px);
-    min-width: 250px;
     padding: 20px;
     min-height: max-content;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -307,7 +298,7 @@ button:hover{
     display: flex;
     padding: 40px;
     text-align: left;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans';
     font-weight: 500;
     font-size: 15px;
     color: #ffffff;
