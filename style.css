@@ -59,7 +59,7 @@ button:hover{
 .section-contents{
     opacity: 0;
     transition: all 2s;
-    filter: blur(5px);
+    filter: blur(10px);
     color: #E7F6F2;
     font-family: 'Unbounded';
     position: relative;
