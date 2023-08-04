@@ -7,7 +7,6 @@
          url('fonts/EXOBYTE/WOFF/EXOBYTE-Regular.woff2') format('woff2'), /* Modern Browsers */
          url('fonts/EXOBYTE/TTF/EXOBYTE-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
 }
-  
 
 body{
     height: 100vh;
@@ -31,7 +30,7 @@ body{
     text-align: center;
     color: #E7F6F2;
     font-family: Josefin Sans;
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 
@@ -50,22 +49,30 @@ button:hover{
     background-color: #5f7d99;
     color:#ffffff;
 }
-.dropdown button{
-    font-size: 14px;
+/*.dropdown button{
+    font-size: 1rem;
 }
+*/
 
 
 /*Contents*/
 .section-contents{
+    opacity: 0;
+    transition: all 2s;
+    filter: blur(5px);
     color: #E7F6F2;
     font-family: 'Unbounded';
     position: relative;
     flex-direction: column;
     align-items: center;
-    min-height: 500px;
     padding: 40px 9vw;
+    min-height: 100vh;
 }
 
+.show{
+    opacity: 1;
+    filter: blur(0);
+}
 
 .big-header { /*mga header sa sections*/
     background-image: linear-gradient(
@@ -109,18 +116,21 @@ button:hover{
 /*CARDS*/
 .card-list {
     display: flex;
-    padding: 45px 1vw;
+    padding: 10px 0vw;
+    margin: 3%;
     overflow-x: scroll;
     cursor: default;
 }
 
 .card-list::-webkit-scrollbar {
     width: 5px;
-    height: 4px;
+    height: 7px;
+    color: #03cbbb;
 }
 
 .card-list::-webkit-scrollbar-thumb {
-    border-radius: 4px;
+    background: #fefefe;
+    border-radius: 0px;
 }
 
 .card {
@@ -323,7 +333,7 @@ button:hover{
     border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb {
-    background: #5f7d99;
+    background: #fefefe;
     border-radius: 4px;
 }
 
@@ -338,10 +348,10 @@ button:hover{
     background-position: center;
     background-size: cover;
 }
-.layer1{
+/*.layer1{
     background-image: url('/SVG/layered-waves-haikei.svg');
 }
-
+*/
 
 .footer {
     justify-content: space-between;
