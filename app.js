@@ -11,3 +11,8 @@ const observer = new IntersectionObserver((entries) =>{
 });
 const hiddenElements = document.querySelectorAll('.section-contents')
 hiddenElements.forEach((el) => observer.observe(el));
+
+
+window.addEventListener('scroll', () => {
+    document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+  }, false);
