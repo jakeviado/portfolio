@@ -8,6 +8,9 @@
          url('fonts/EXOBYTE/TTF/EXOBYTE-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 
+html{
+    scroll-behavior: smooth;
+}
 body{
     height: 100vh;
     box-sizing: border-box;
@@ -54,15 +57,15 @@ button:hover{
 /*Contents*/
 .section-contents{
     opacity: 0;
-    transition: all 2s;
-    filter: blur(10px);
+    transition: all 1s;
+    filter: blur(20px);
     color: #E7F6F2;
     font-family: 'Unbounded';
     position: relative;
     flex-direction: column;
     align-items: center;
-    padding: 40px 9vw;
-    min-height: 100vh;
+    margin: 10vw;
+    min-height: 110vh;
 }
 
 .show{
