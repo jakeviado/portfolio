@@ -10,6 +10,9 @@
 
 html{
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 10rem;
+   
 }
 body{
     height: 100vh;
@@ -21,7 +24,8 @@ body{
 }
 
 /*NAVIGATION BAR*/
-.nav-bar{
+.nav-bar-elements{
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,21 +62,22 @@ button:hover{
 
 /*Contents*/
 section{
+    margin-block: 100vh;
+    padding-block: 10vh;
     display: block;
+    scroll-snap-align: start;
     
 }
-
 
 .section-contents{
     display: grid;
     opacity: 0;
-    transition: all 2s;
+    transition: all 1s;
     filter: blur(20px);
     color: #E7F6F2;
     position: relative;
     margin-inline: 10vw;
-    margin-block-start: 8rem;
-    margin-block-end: 20rem;
+    
     overflow: visible;
 }
 
@@ -113,10 +118,9 @@ section{
 .section-contents .paragraph-contents{
     cursor: default;
     margin-block-end: 1rem;
-    font-size: .5rem;
+    font-size: 1rem;
     font-weight: 500;
     font-family: 'Jost';
-    
 }
 
 /*CARDS*/
