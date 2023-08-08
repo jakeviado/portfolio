@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap');
 
 @font-face {
     font-family: 'EXOTYPE';
-    src: url('fonts/EXOBYTE/OTF/EXOBYTE-Regular.otf'); /* IE9 Compat Modes */
-    src: url('fonts/EXOBYTE/WOFF/EXOBYTE-Regular.woff') format('woff'), /* Modern Browsers */
-         url('fonts/EXOBYTE/WOFF/EXOBYTE-Regular.woff2') format('woff2'), /* Modern Browsers */
-         url('fonts/EXOBYTE/TTF/EXOBYTE-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+    src: url('fonts/EXOBYTE/OTF/EXOBYTE-Regular.otf');
+    src: url('fonts/EXOBYTE/WOFF/EXOBYTE-Regular.woff') format('woff'),
+         url('fonts/EXOBYTE/WOFF/EXOBYTE-Regular.woff2') format('woff2'),
+         url('fonts/EXOBYTE/TTF/EXOBYTE-Regular.ttf') format('truetype');
 }
+
 
 html{
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-    scroll-padding-top: 10rem;
-   
+    /*scroll-snap-type: y mandatory;
+    scroll-padding-top: 10rem;*/
 }
 body{
     height: 100vh;
@@ -20,49 +21,12 @@ body{
     margin: 0px;
     padding: 0px;
     background: #0e1011;
-    
 }
 
-/*NAVIGATION BAR*/
-.nav-bar-elements{
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10%;
-    margin: 0 auto;
-}
-
-
-.logo-name{
-    align-items: center;
-    text-align: center;
-    color: #E7F6F2;
-    font-family: Josefin Sans;
-    font-size: 30px;
-}
-
-button{
-    padding: 11px;
-    min-width: 5rem;
-    font-family: 'Unbounded';
-    font-weight: 500;
-    color: #15152a;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.2s ease 0s;
-}
-button:hover{
-    translate: -3px;
-    background-color: #e67e15;
-    color:#ffffff;
-}
 
 /*Contents*/
 section{
-    margin-block: 100vh;
+    margin-block: 10vh;
     padding-block: 10vh;
     display: block;
     scroll-snap-align: start;
@@ -77,7 +41,6 @@ section{
     color: #E7F6F2;
     position: relative;
     margin-inline: 10vw;
-    
     overflow: visible;
 }
 
@@ -98,10 +61,9 @@ section{
   background-clip: border-box;
   background-size: 200% auto;
   color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   animation: textclip 5s ease infinite;
   display: inline-block;
  
@@ -127,7 +89,7 @@ section{
 .card-list {
     display: flex;
     padding: 10px 1vw;
-    margin-block: 5rem;
+    margin-block: 2rem;
     overflow-x: scroll;
     cursor: default;
 }
@@ -154,8 +116,6 @@ section{
 
 }
 .card:hover{
-    height: 201px;
-    min-width: 251px;
     background: linear-gradient(-45deg, #6f0bd8, #cc9ced, #03cbbb);
 	background-size: 400% 400%;
 	animation: gradient 4s ease infinite;
@@ -163,7 +123,7 @@ section{
 
 .card-section1{
     overflow: hidden;
-    margin-top: 15px;
+    margin-block: .7rem;
     min-width: max-content;
     height: 5px; 
     background: radial-gradient( #e67e15, #ff6d1e, #ff0149, #ef44b8, #6f0bd8, #cc9ced, #03cbbb);
@@ -209,8 +169,8 @@ section{
 }
 
 .card-header h2 {
-    font-size: 20px;
-    font-family: 'EXOTYPE';
+    font-size: 25px;
+    font-family: 'Aoboshi One', serif;
     font-weight: 100;
     margin: .20rem .20 auto;
     text-decoration: none;
@@ -223,10 +183,10 @@ section{
 .card-author {
     margin: .5rem 0 0;
     display: grid;
-    grid-template-columns: 75px 1fr;
+    grid-template-columns: 50px 1fr;
     align-items: center;
     position: relative;
-    font-family: 'Unbounded';
+    font-family: 'Aoboshi One', serif;
 }
 
 .avatar {
@@ -269,66 +229,6 @@ section{
     font-style: normal;
     font-weight: 100;
     color: #0e1011;
-}
-
-/*
-.tags a:hover {
-    background: linear-gradient(90deg,#15152a,#8aa8ed);
-    text-shadow: none;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-box-decoration-break: clone;
-    background-clip: text;
-    border-color: #15152a;
-}
-*/
-
-
-/*dropdown button*/
-.dropdown-content{
-    padding: 1.5rem;
-    display: none;
-    position: absolute;
-    background: rgba(255, 255, 255, 0.1);
-    min-width: 200px;
-    backdrop-filter: blur(15px);
-    min-height: max-content;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    overflow: hidden;
-    border-radius: 4px;
-    right: 10vw;
-    top: 12%;
-    transition: .3s;
-    color: #ffffff;
-    font-family: 'Jost';
-}
-.dropdown-content .dropdown-btn{
-    display: flex;
-    padding-block: 20px;
-    text-align: left;
-    font-weight: 500;
-    font-size: 15px;
-    color: #ffffff;
-}
-.btn{
-    height: 50px;
-    display: block;
-    width: 100%;
-    border-radius: 1px;
-    font-size: 17px;
-}
-.dropdown-btn:hover{
-    cursor: pointer;
-}
-
-/*scrollbar*/
-::-webkit-scrollbar {
-    width: 5px;
-}  
-::-webkit-scrollbar-thumb {
-    background: #fefefe;
-    border-radius: 4px;
 }
 
 /*Footer*/

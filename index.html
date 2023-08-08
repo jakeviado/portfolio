@@ -10,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="functions.css">
     <script defer src="app.js"></script>
     <script src="https://catfact.ninja/docs/api-docs.json" defer></script>
     <title>WORK IN PROGRESS</title>
@@ -21,51 +23,62 @@
 
 <body>
     
-    <nav class="nav-bar">
-      <div class="nav-bar-elements">
-        <div class="logo">
-          <p class="logo-name">⌀</p>
-        </div>
+     <nav class="nav-bar">
+           <div class="nav-bar-elements">
+             <div class="logo"><p class="logo-name">⌀</p>
+           </div>
       
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">More</i></button>
-            <div class="dropdown-content">
-              <a class="dropdown-btn" href="home">Home</a>
-              <a class="dropdown-btn" href="projects">Projects</a>
-              <a class="dropdown-btn" href="contacts">Contacts</a>
-              <button class="btn">btn</button>
-            </div>
-        </div>
-      </div>
-    </nav>
+         <div class="nav-bar-dropdowns">
+            <button type="button" onclick="myFunction(1)" class="dropbtn1"> <span>More</span><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+                <ul id="dropdown1" class="dropdown-buttons">
+                  <li><a href="default"><i id="icons" class="fa fa-home" aria-hidden="true"></i> <span>Home</span></a></li>
+                  <li><a href="news"><i id="icons" class="fas fa-newspaper"></i> <span>News</span> </a></li>
+                  <li><a href="contact"><i id="icons" class="fa fa-phone" aria-hidden="true"></i> <span>Contact</span> </a></li>
+                  <li><a href="about"><i id="icons" class="fa fa-info" aria-hidden="true"></i> <span>About</span>  </a></li>
+                </ul>
+              
+
+
+              <button type="button" onclick="myFunction(2)" class="dropbtn2"> <span>Test</span> <i class="fa fa-chevron-down" aria-hidden="true"> </i></button>
+                <ul id="dropdown2" class="dropdown-buttons">
+                  <li><a href="default">Test</a></li>
+                  <li><a href="news">Test</a></li>
+                  <li><a href="contact">Test</a></li>
+                  <li><a href="about">Test</a></li>
+                </ul>
+         </div>
+      </nav>
     
     
-    
+    <main>
     <section class="section-contents">
         <h2 class="big-header">Welcome</h2>
-        <p class="paragraph-contents">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat nam distinctio animi aliquam beatae, laborum numquam velit rerum deleniti sunt ullam reiciendis assumenda voluptatem hic exercitationem libero, autem quibusdam corrupti.
-
+        <p class="paragraph-contents">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat nam distinctio animi aliquam beatae, laborum numquam velit rerum deleniti sunt ullam reiciendis assumenda voluptatem hic exercitationem libero, autem quibusdam corrupti.</p>
+        
           
         <article class="card-section1">
-          
           <header class="card-header">
             <a class="svg-element-header"></a>
           </header>
-
         </article>
+        
+        <button class="add-card" href="#">Test</button>
+        
     </section>
 
 
-     <section class="section-contents">
+     <section class="section-contents section-2" >
         <h2 class="big-header">Header 2</h2>
         <p class="paragraph-contents">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eos, beatae atque, laboriosam provident praesentium dolorem odit eligendi ipsa, fugiat dolor? Accusantium explicabo quae asperiores sequi molestiae. Voluptatum, illo veniam?</p>
 
+        
+        
         <card class="card-list">
 
             <article class="card">
               <header class="card-header">
                 <p>test</p>
-                <h2>Test</h2>
+                <h2>シーシャープ</h2>
               </header>
       
               <div class="card-author">
@@ -74,7 +87,7 @@
                 </a>
       
                 <div class="author-name">
-                  <div class="author-name-prefix">Test</div>
+                  <div class="author-name-prefix">C#</div>
                 </div>
               </div>
               <div class="tags">
@@ -156,16 +169,16 @@
         <h2 class="big-header">Header 4</h2>
         <p class="paragraph-contents">Aliquam beatae quis suscipit totam alias quo, neque corporis esse praesentium architecto deserunt ipsum quas velit ut earum, harum est aliquid fuga debitis error aperiam. Voluptatibus repudiandae quis similique. Eum.</p>
     </section>
-
+    </main>
 
     <div class="spacer layer1">
         <nav class="footer">
             <p class="footer-details">⌀™</p>
             <br>
             <div class="social-links">
-                <a class="links" href="https://youtu.be/dQw4w9WgXcQ"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a class="links" href="https://youtu.be/dQw4w9WgXcQ"><i class="fa fa-github" aria-hidden="true"></i></a>
-                <a class="links" href="https://youtu.be/dQw4w9WgXcQ"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a class="links" aria-label="Instagram" href="https://youtu.be/dQw4w9WgXcQ"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a class="links" aria-label="Github" href="https://youtu.be/dQw4w9WgXcQ"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a class="links" aria-label="Facebook" href="https://youtu.be/dQw4w9WgXcQ"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
             </div>
         </nav>
     </div>
