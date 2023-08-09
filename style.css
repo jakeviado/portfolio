@@ -97,6 +97,7 @@ section{
     padding: 10px 1vw;
     margin-block: 2rem;
     overflow-x: scroll;
+    overflow-y: hidden;
     cursor: default;
 }
 
@@ -114,7 +115,7 @@ section{
 
 .card {
     height: 260px;
-    min-width: 250px;
+    min-width: 280px;
     padding: 1.5rem;
     border-radius: 8px; 
     background: linear-gradient(-45deg,  #fefefe, #DDE6ED);
@@ -124,7 +125,8 @@ section{
 }
 .featured-card {
     height: 300px;
-    min-width: 250px;
+    min-height: max-content;
+    min-width: 200px;
     padding: 1.5rem;
     border-radius: 8px; 
     background: linear-gradient(-45deg,  #fefefe, #DDE6ED);
@@ -180,7 +182,7 @@ section{
 
 .card-header p {
     font-weight: 500;
-    font-size: 17px;
+    font-size: 13px;
     margin: 0 0 .5rem;
     color: #0e1011;
     font-family: 'Unbounded';
@@ -190,7 +192,7 @@ section{
     font-size: 25px;
     font-family: 'Aoboshi One', serif;
     font-weight: 100;
-    margin: .30rem .20 auto;
+    margin: .30rem .10rem 1rem;
     text-decoration: none;
     color: #0e1011;
     border: 0;
@@ -237,14 +239,14 @@ section{
 }
 
 .featured-img{
-    margin: .5rem 0 0;
+    margin: .1rem 0 0;
     padding: 10px 1vw;
     display: flex;
     grid-template-columns: 70px 1fr;
     align-items: center;
     justify-content: center;
     position: relative;    
-    overflow-x: scroll;
+    /*overflow-x: scroll;*/
     cursor: default;
     
 }
@@ -268,7 +270,6 @@ section{
     flex-direction : column;
     padding-inline: 10vw;
     padding-block: 10px;
-    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
