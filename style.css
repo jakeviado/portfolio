@@ -85,10 +85,10 @@ section{
     font-family: 'Jost';
 }
 .pusa{
-    width: 300px;
-    border-radius: 8px;
+    border-radius: 40px;
     margin: auto;
-    margin-block: 5rem;
+    width: 30vh;
+    padding: 1.5rem;
 }
 
 /*CARDS*/
@@ -123,7 +123,7 @@ section{
 
 }
 .featured-card {
-    height: 250px;
+    height: 300px;
     min-width: 250px;
     padding: 1.5rem;
     border-radius: 8px; 
@@ -299,7 +299,7 @@ nav .footer-details{
     position: relative;
     text-align: center;
     display: inline;
-    font-size: 27px;
+    font-size: 30px;
     padding-inline: 10px;
     color: #ffffff;
 }
