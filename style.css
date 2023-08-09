@@ -84,6 +84,12 @@ section{
     font-weight: 500;
     font-family: 'Jost';
 }
+.pusa{
+    width: 300px;
+    border-radius: 8px;
+    margin: auto;
+    margin-block: 5rem;
+}
 
 /*CARDS*/
 .card-list {
