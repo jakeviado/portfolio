@@ -190,7 +190,7 @@ section{
     font-size: 25px;
     font-family: 'Aoboshi One', serif;
     font-weight: 100;
-    margin: .20rem .20 auto;
+    margin: .30rem .20 auto;
     text-decoration: none;
     color: #0e1011;
     border: 0;
@@ -229,8 +229,8 @@ section{
 }
 
 .additional-avatar img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     display: flex;
     overflow: hidden;
     margin: .1rem 1rem;
