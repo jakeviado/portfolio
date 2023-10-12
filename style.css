@@ -95,20 +95,11 @@ section{
 
 
 /*Footer*/
-.spacer{   /*graphic designs*/
-    position: relative;
-    flex-direction : column;
-    padding-inline: 10vw;
-    padding-block: 10px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 .footer {
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem;
+    margin: 1rem;
     display: flex;
     position: relative;
 }
@@ -123,8 +114,7 @@ nav .footer-details{
     position: relative;
     text-align: center;
     display: inline;
-    font-size: 30px;
-    padding-inline: 10px;
+    padding-inline: 2px;
     color: #ffffff;
 }
 
